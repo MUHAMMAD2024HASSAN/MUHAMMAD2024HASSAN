@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./inbox_files/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">what we do</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">About us</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">contuct us</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Eng</a></li>
+            </ul>
+            <div>
+                <img>
+            </div>
+        </header>
+        <div class="Logo">
+            <img src="./inbox_files/Logo.png" class="Logo">
+        </div>
+    </section>
+    <section class="container-2">
+        <div class="taxt-1">
+            <h1>OUR PROJECTS</h1>
+        </div>
+        <div class="image-container">
+            <img class="image-layer2" src="./inbox_files/Layer 2.png" alt="image2">
+            <img class="image-layer3" src="./inbox_files/Layer 3.png" alt="image3">
+            <img class="image-layer5" src="./inbox_files/Layer 5.png" alt="image5">
+            <img class="image-layer6" src="./inbox_files/Layer 6.png" alt="image6">
+        </div>
+    </section>
+    <section class="contact-container">
+       <div class="taxt-2">
+            <h1>CONTACT US</h1>
+       </div> 
+       <div class="contact-text">
+        <h2>Here to talk?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus ipsa accusantium veritatis, eius, aspernatur cum atque velit debitis dignissimos repellat delectus odio vero architecto eum. Cumque iste nam quisquam.</p>
+        <img src="./inbox_files/saved_resource" alt="">
+       </div>
+
+
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
